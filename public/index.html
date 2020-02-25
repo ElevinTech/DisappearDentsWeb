@@ -141,12 +141,11 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
 
     <script>
         $('#submit_appointment').on('click', function(){
-
-            
+            submit_quote();
         })
         
         function submit_quote(){
@@ -165,11 +164,8 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
 
-            var db = firebase.database();
-            var quoteRef = db.ref('quotes');
-            var newQuoteKey = quoteRef.push().key;
-
-            console.log(newQuoteKey)
+            var db = firebase.firestore();
+            var quoteRef = db.collection("quotes")
 
             var name = $('#name').val()
             var phone = $('#phone').val()
@@ -182,7 +178,7 @@
 
             var comment = $('#comment').val()
 
-            quoteRef.child(newQuoteKey).set({
+            quoteRef.add({
                 user: {"name" : name, "phone" : phone, "email" : email, "location" : location},
                 vehicle: {"year" : year, "make" : make, "model" : model},
                 comment : comment,
