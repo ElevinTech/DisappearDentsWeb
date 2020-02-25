@@ -1,0 +1,228 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
+    <style>
+        .modal-body input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Disappear Dents Web App</h1>
+    
+        <input type="hidden" name="action" value="addAppointment">
+        <div class="modal-body clearfix">
+
+                <!-- personal info panel -->
+                <div class="personal-panel col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Personal Information <i class="fa fa-user pull-right"></i></div>
+                    <div class="panel-body">
+                      
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="">
+                      <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" required="">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
+                      <input type="text" class="form-control" name="location" id="location" placeholder="Location" required="">
+
+                      <label>Preferred contact method</label> <br>
+                      <label class="radio-inline">
+                        <input type="radio" name="contact_method" value="call"> Phone call
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="contact_method" value="text"> Text
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="contact_method" value="email"> Email
+                      </label>
+
+                    </div><!-- panel-body -->
+                  </div><!-- panel -->
+                </div><!-- personal info panel -->
+
+                <!-- appointment info panel -->
+                <div class="appointment-panel col-md-6 hidden">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Appointment Information <i class="fa fa-calendar pull-right"></i></div>
+                    <div class="panel-body">
+
+                      <label>Appointment 1 <small>(date/time)</small></label>
+                      <hr>
+
+                      <div class="col-md-6">
+                        <input type="date" class="form-control" name="appointment_date_1">
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <input type="time" class="form-control" name="appointment_time_1">
+                      </div>
+
+                      <label>Appointment 2 <small>(date/time)</small></label>
+                      <hr>
+
+                      <div class="col-md-6">
+                        <input type="date" class="form-control" name="appointment_date_2">
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <input type="time" class="form-control" name="appointment_time_2">
+                      </div>
+
+                      <label>Type of Appointment</label> <br>
+                      <label class="radio-inline">
+                        <input type="radio" name="appointment_type" value="drop_off"> Drop Off
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="appointment_type" value="waiting"> Waiting
+                      </label>
+
+
+                    </div>
+                  </div>
+                </div><!-- appointment info panel -->
+
+                <!-- upload image panel -->
+                <div class="upload-panel col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Upload Image <i class="fa fa-calendar pull-right"></i></div>
+                    <div class="panel-body">
+                      <label class="btn btn-default btn-sm" for="my-file-selector" id="my-file-selector-label">
+                          <input name="fileToUpload[]" id="my-file-selector" type="file" style="display:none" multiple="" accept="image/jpg, image/jpeg, image/png, image/gif" onchange="$('#upload-file-info').html(this.files.length + ' file(s) selected')">Choose File...
+                      </label>
+                      <span class="label label-info" id="upload-file-info">4 file(s) selected</span>
+                      <div id="uploaded_images_div">
+                        <ul id="uploaded_images_list"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- upload image panel -->
+
+                <!-- vehicle information panel -->
+                <div class="vehicle-panel col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Vehicle Information <i class="fa fa-car pull-right"></i></div>
+                    <div class="panel-body">
+                      <input type="text" class="form-control" name="year" id="year" placeholder="Year">
+                      <input type="text" class="form-control" name="make" id="make" placeholder="Make">
+                      <input type="text" class="form-control" name="model" id="model" placeholder="Model">
+                    </div>
+                  </div>
+                </div><!-- vehicle information panel -->
+
+                <!-- comments panel -->
+                <div class="comments-panel col-md-6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Requests / Comments <i class="fa fa-commenting pull-right"></i></div>
+                    <div class="panel-body">
+                      <textarea name="comment" id="comment" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div><!-- comments panel -->
+          
+        </div><!-- modal-body -->
+        <div class="modal-footer">
+          <div class="col-md-12"><button type="button" id="submit_appointment" class="btn btn-success">Submit</button></div>
+        </div><!-- modal-footer -->
+        
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
+
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="/__/firebase/7.9.1/firebase-auth.js"></script> -->
+    <!-- <script src="/__/firebase/7.9.1/firebase-database.js"></script> -->
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+
+
+    <script>
+        $('#submit_appointment').on('click', function(){
+
+            
+        })
+        
+        function submit_quote(){
+
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
+            authDomain: "giveitupandtradeapp.firebaseapp.com",
+            databaseURL: "https://giveitupandtradeapp.firebaseio.com",
+            projectId: "giveitupandtradeapp",
+            storageBucket: "giveitupandtradeapp.appspot.com",
+            messagingSenderId: "860167260317",
+            appId: "1:860167260317:web:d68cd05feb7c782974ec74"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var db = firebase.database();
+            var quoteRef = db.ref('quotes');
+            var newQuoteKey = quoteRef.push().key;
+
+            console.log(newQuoteKey)
+
+            var name = $('#name').val()
+            var phone = $('#phone').val()
+            var email = $('#email').val()
+            var location = $('#location').val()
+
+            var year = $('#year').val()
+            var make = $('#make').val()
+            var model = $('#model').val()
+
+            var comment = $('#comment').val()
+
+            quoteRef.child(newQuoteKey).set({
+                user: {"name" : name, "phone" : phone, "email" : email, "location" : location},
+                vehicle: {"year" : year, "make" : make, "model" : model},
+                comment : comment,
+                images: ["",""]
+            }).then(function(){
+                console.log("success!")
+            }).catch(function(error) {
+                console.log("error: " + error)
+            })
+
+            return false;
+        }
+       
+        function submit_job_application(){
+
+        }
+
+        function submit_contact_us(){
+
+        }
+
+        function create_blog_post(){
+
+        }
+
+        // // Read Data
+        // ref.once('value', function(snapshot) {
+        //     snapshot.forEach(function(childSnapshot) {
+        //         var childKey = childSnapshot.key;
+        //         var childData = childSnapshot.val();
+                
+        //         console.log(childKey)
+        //         console.log(childData)
+        //     });
+        // });
+
+        
+
+
+
+      </script>
+
+</html>
