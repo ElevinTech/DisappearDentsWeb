@@ -1,0 +1,81 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1>Contact US</h1>
+    
+    <input type="text" id="name" placeholder="Name">
+    <br>
+    <input type="text" id="email" placeholder="Email">
+    <br>
+    <input type="text" id="phone" placeholder="Mobile No.">
+    <br>
+    <input type="text" id="company" placeholder="Company">
+    <br>
+    <input type="text" id="message" placeholder="Message">
+    <br>
+    <button type="button" id="submit">Submit</button>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+    <script>
+
+        $('#submit').on('click', function(){
+            submit();
+        })
+        
+        function submit(){
+
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
+                authDomain: "giveitupandtradeapp.firebaseapp.com",
+                databaseURL: "https://giveitupandtradeapp.firebaseio.com",
+                projectId: "giveitupandtradeapp",
+                storageBucket: "giveitupandtradeapp.appspot.com",
+                messagingSenderId: "860167260317",
+                appId: "1:860167260317:web:d68cd05feb7c782974ec74"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var db = firebase.firestore();
+            var ref = db.collection("contact-us")
+
+            var name = $('#name').val()
+            var email = $('#email').val()
+            var phone = $('#phone').val()
+            var company = $('#company').val()
+            var message = $('#message').val()
+
+
+            ref.add({
+                name: name,
+                email: email,
+                phone: phone,
+                company: company,
+                message: message
+            }).then(function(){
+                console.log("success!")
+            }).catch(function(error) {
+                console.log("error: " + error)
+            })
+
+            return false;
+        }
+
+
+    </script>
+
+</html>

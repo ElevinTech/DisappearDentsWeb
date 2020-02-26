@@ -1,0 +1,66 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1>Admin Page</h1>
+    
+
+
+    <p id="message"></p>
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+
+    <script>
+
+        initializeFirebase()
+        observeAuth()
+
+        function initializeFirebase(){
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
+                authDomain: "giveitupandtradeapp.firebaseapp.com",
+                databaseURL: "https://giveitupandtradeapp.firebaseio.com",
+                projectId: "giveitupandtradeapp",
+                storageBucket: "giveitupandtradeapp.appspot.com",
+                messagingSenderId: "860167260317",
+                appId: "1:860167260317:web:d68cd05feb7c782974ec74"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        }
+
+        function observeAuth(){
+            firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                var displayName = user.displayName;
+                var email = user.email;
+                var emailVerified = user.emailVerified;
+                var photoURL = user.photoURL;
+                var isAnonymous = user.isAnonymous;
+                var uid = user.uid;
+                var providerData = user.providerData;
+                // ...
+                console.log("email:" + email)
+            } else {
+                // User is signed out.
+                // ...
+                console.log("no user info")
+            }
+            });
+        }
+
+    </script>
+
+</html>

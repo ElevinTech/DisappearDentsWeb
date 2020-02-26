@@ -1,0 +1,146 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
+    <style>
+        input {
+            margin-bottom: 20px;
+            margin-bottom: 20px;
+            height: 45px;
+            padding: 4px 4px 4px 15px;
+            width: 100%;
+            color: #5f5b5c;
+        }
+
+        select {
+            margin-bottom: 20px;
+            height: 45px;
+            padding: 4px 4px 4px 15px;
+            width: 100%;
+            color: #5f5b5c;
+            background-color: white;
+        }
+
+        .submit {
+            background-image: none;
+            background-color: #dedede;
+            font-size: 16px;
+            border-radius: 0px;
+            border-width: 0px;
+            color: #0a0a0a;
+            width: 250px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Career Page</h1>
+    
+    <form action="https://disappeardents.com/career/" method="post" enctype="multipart/form-data" class="col-md-6">
+        <div class="beginForm">
+         <div class="row">
+            <div class="col-md-12">
+              <input type="text" placeholder="Name" name="applicant_name" id="name" maxlength="30" style="margin-bottom: 20px;" required="">
+             </div>
+             <div class="col-md-12">
+                <input type="email" placeholder="Email" name="email" id="email" maxlength="30" required="">
+              </div>
+         </div>
+         <div class="row">
+           <div class="col-md-12">
+              <input type="tel" placeholder="Mobile No." id="phone" name="phone" style="margin-bottom: 20px;" required="">
+            </div>
+            <div class="col-md-12">
+              <input type="number" placeholder="Years of PDR Training" id="years" name="years_training" maxlength="20" required="">
+            </div>
+            <div class="col-md-12">
+              <select name="position" id="position" required="">
+                  <option value="" disabled="" selected="">Position Applying for</option>
+                  <option value="pdr_tech">PDR Technician</option>
+                  <option value="apprentice">Apprenticeship program</option>
+                  <option value="ri_tech">R&amp;I Technician</option>
+                  <option value="sales">Sales</option>
+                  <option value="estimator">Estimator</option>
+                  <option value="others">others</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="input-group"> 
+                  <input class="form-control disabled" placeholder="" id="upload-file-info" disabled=""> 
+                  <span class="input-group-btn"> 
+                      <label class="btn btn-default" for="my-file-selector" id="my-file-selector-label" style="padding-top: 11px; height: 45px;">
+                          <input name="resume" id="my-file-selector" type="file" style="display:none" accept="" onchange="$('#upload-file-info').val(this.files[0].name)">Upload Resume
+                      </label>
+                  </span> 
+                  
+              </div>
+
+            </div>
+        </div>
+          <div class="row">
+                <input type="button" id="submit" value="Apply Now" class="btn btn-primary btn-lg submit" id="form-submit" style="margin-bottom:20px;">
+        </div>
+      </div>
+  </form>
+        
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+    <script>
+
+        $('#submit').on('click', function(){
+            submit();
+        })
+        
+        function submit(){
+
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
+            authDomain: "giveitupandtradeapp.firebaseapp.com",
+            databaseURL: "https://giveitupandtradeapp.firebaseio.com",
+            projectId: "giveitupandtradeapp",
+            storageBucket: "giveitupandtradeapp.appspot.com",
+            messagingSenderId: "860167260317",
+            appId: "1:860167260317:web:d68cd05feb7c782974ec74"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var db = firebase.firestore();
+            var ref = db.collection("job-applications")
+
+            var name = $('#name').val()
+            var phone = $('#phone').val()
+            var email = $('#email').val()
+            var training_years = $('#years').val()
+            var position =  $("#position option:selected").text();
+
+            ref.add({
+                name: name,
+                phone: phone,
+                email : email,
+                training_years: training_years,
+                position : position,
+            }).then(function(){
+                console.log("success!")
+            }).catch(function(error) {
+                console.log("error: " + error)
+            })
+
+            return false;
+        }
+
+
+    </script>
+
+</html>
