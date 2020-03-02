@@ -8,8 +8,6 @@
 <body>
     <h1>Admin Page</h1>
     
-
-
     <p id="message"></p>
 </body>
 
@@ -53,10 +51,12 @@
                 var providerData = user.providerData;
                 // ...
                 console.log("email:" + email)
+                $('#message').html("User Auth Detected")
             } else {
                 // User is signed out.
                 // ...
                 console.log("no user info")
+                $('#message').html("No User Auth")
             }
             });
         }
