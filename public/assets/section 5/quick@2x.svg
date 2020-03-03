@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="84px" viewBox="0 0 56 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>quick@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Disappear-Dents---Homepage" transform="translate(-1027.000000, -3979.000000)" stroke="#0074FF" stroke-width="4">
+            <g id="Group-15" transform="translate(-0.500000, 3681.000000)">
+                <g id="Group-6" transform="translate(0.500000, 0.000000)">
+                    <g id="Group-13" transform="translate(331.000000, 300.000000)">
+                        <g id="quick" transform="translate(698.948757, 0.000000)">
+                            <circle id="Oval" cx="25.4545455" cy="40" r="25.4545455"></circle>
+                            <polyline id="Shape" points="25.4545455 29.0909091 25.4545455 40 30.9090909 45.4545455"></polyline>
+                            <path d="M41.8545455,59.4545455 L40.5818182,73.3818182 C40.2421601,77.1408273 37.0833832,80.0153143 33.3090909,80 L17.5636364,80 C13.789344,80.0153143 10.6305671,77.1408273 10.2909091,73.3818182 L9.01818182,59.4545455 M9.05454545,20.5454545 L10.3272727,6.61818182 C10.6657028,2.8730893 13.8032853,0.0035415207 17.5636364,1.66071313e-15 L33.3818182,1.66071313e-15 C37.1561105,-0.0153142825 40.3148874,2.8591727 40.6545455,6.61818182 L41.9272727,20.5454545" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

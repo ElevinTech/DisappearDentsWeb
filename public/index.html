@@ -1,213 +1,919 @@
 <html>
+
 <head>
 
-    <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
-    <style>
-        .modal-body input {
-            margin-bottom: 10px;
-        }
-    </style>
+  <link rel="stylesheet" href="https://disappeardents.com/wp-content/themes/disappeardents/css/bootstrap.min.css">
+  <style>
+    .modal-body input {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <style>
+    .description_section {
+      padding-bottom: 150px;
+    }
+
+    .description_section hr {
+      margin-bottom: 10px;
+      border-top: 8px solid #4cae4c;
+      width: 9%;
+    }
+
+    .description_section .disDentsSideInfo {
+      border-left: #cacaca;
+      border-left-style: solid;
+      padding-left: 50px;
+      border-left-width: 1px;
+    }
+
+    .contact_us_section {
+      padding-bottom: 100px;
+      padding-top: 30px;
+      background-size: cover;
+      background-image: url('/assets/section4/section 4 - bg.jpg');
+    }
+
+    .contact_us_section hr {
+      margin-bottom: 0px;
+      border-top: 8px solid #4cae4c;
+      width: 6%;
+    }
+
+    .contact_us_section h1 {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 50;
+      margin-top: 15px;
+      font-size: 33px;
+    }
+
+    .contact_us_section form {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    .contact_us_section input {
+      height: 55px;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 4px 4px 4px 15px;
+      width: 100%;
+      color: white;
+      font-size: 17px;
+      border-radius: 0;
+
+    }
+
+    .contact_us_section textarea {
+      height: 250px;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 4px 4px 4px 15px;
+      width: 100%;
+      color: white;
+      font-size: 17px;
+      border-radius: 0;
+    }
+
+    .contact_us_form button {
+      height: 55px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      padding: 50;
+      background-color: #101010;
+    }
+
+    footer h3 {
+      font-weight: bold;
+      font-size: 13px;
+      color: #17BC28;
+      text-align: center;
+    }
+
+    footer p {
+      color: #FBFBFB;
+      font-size: 10px;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+
+    .testimonialSection {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 150px;
+    }
+
+    .testimonialSection hr {
+      margin-bottom: 0px;
+      border-top: 8px solid #4cae4c;
+      width: 6%;
+    }
+
+    .testimonialSection h3 {
+      color: white;
+    }
+
+    .testimonialSection .carousel {
+      height: 350px;
+      background-color: rgba(255, 255, 255, 0.82);
+    }
+
+    .blogPosts{
+      padding-top: 50px;
+      padding-bottom: 150px;
+    }
+
+    .blogPosts h1 {
+      text-align: center;
+    }
+
+    .blogPosts button {
+      text-align: center;
+    }
+    .blogPosts a {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Disappear Dents Web App</h1>
-    
-        <input type="hidden" name="action" value="addAppointment">
-        <div class="modal-body clearfix">
+  <!-- <h1>Disappear Dents Web App</h1>
 
-                <!-- personal info panel -->
-                <div class="personal-panel col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Personal Information <i class="fa fa-user pull-right"></i></div>
-                    <div class="panel-body">
-                      
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="">
-                      <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" required="">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
-                      <input type="text" class="form-control" name="location" id="location" placeholder="Location" required="">
+  <a class="btn" href="#" data-toggle="modal" data-target="#myModal">GET A QUOTE NOW</a> -->
 
-                      <label>Preferred contact method</label> <br>
-                      <label class="radio-inline">
-                        <input type="radio" name="contact_method" value="call"> Phone call
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="contact_method" value="text"> Text
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="contact_method" value="email"> Email
-                      </label>
+  <section class="blogPosts">
+    <div class="container"
+      style="text-align: center;">
+      <div class="row" style="margin-bottom:50px;">
 
-                    </div><!-- panel-body -->
-                  </div><!-- panel -->
-                </div><!-- personal info panel -->
+        <h1>THIS WEEK IN DISAPPEAR DENTS</h1>
 
-                <!-- appointment info panel -->
-                <div class="appointment-panel col-md-6 hidden">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Appointment Information <i class="fa fa-calendar pull-right"></i></div>
-                    <div class="panel-body">
+      </div>
 
-                      <label>Appointment 1 <small>(date/time)</small></label>
-                      <hr>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="pull-right"
+            style="margin-top:60px; margin-bottom:30px; margin-top: 0px;"
+            src="assets/section 6/hail technicians.jpg">
+        </div>
 
-                      <div class="col-md-6">
-                        <input type="date" class="form-control" name="appointment_date_1">
+        <div class="col-md-6" style="text-align:left;">
+          <h2 style="margin-top: 0;">Disappear Dents is looking for hail technicians</h2>
+          <hr style="width: 110px;
+                margin-left: 0;">
+          <h4 style="font-size: 14px;
+                color: #696969;
+                font-weight: 700;">June 20 2018</h4>
+          <p>Interested in joining our team this year? We have strong ties with major body shops and fleet companies in
+            the Chicagoland area. If interested please visit our website, and send us your information under the Careers
+            tab!</p>
+        </div>
+      </div>
+
+      <a class="btn btn-default btn-lg" style="margin-top:50px;" href="https://disappeardents.com/gallery">View our gallery</a>
+
+    </div>
+  </section>
+  <!-- blogPosts -->
+
+  <section class="testimonialSection"
+    style="background-size:cover; background-image: url('assets/section 7/sec 7 bg.jpg');">
+
+    <div class="row">
+      <hr>
+      <h3>Customer Reviews</h3>
+      <p style="font-size:16px; margin-top:15px; color:#48bd88;">Read our satisfied customers reviews.</p>
+    </div>
+
+    <div id="myCarousel" class="carousel slide col-md-6 col-md-offset-3" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <div class="testimonial">
+            <h3 class="rr_title">Dent Fixed!</h3>
+            <div class="clear"></div>
+            <span>
+              <div class="rr_review_post_id" style="display: none;">
+                <a href="https://disappeardents.com/review/"> Review </a>
+              </div>
+
+              <div class="clear"></div>
+            </span>
+
+            <span class="rr_date" style="display:none;">
+              <meta content="2017-09-02 16:06:08">
+              <time datetime="Saturday, September 2, 2017"> Saturday, September 2, 2017 </time>
+            </span>
+
+            <div class="stars"> ★★★★★ </div>
+
+            <div class="clear"></div>
+
+            <div class="rr_review_text">
+              <span class="drop_cap">“</span>
+              <span>I had a small dent it the passenger side door of our new Subaru, and they made it Disappear. I'm
+                amazed b<span class="ellipses">... </span><a href="#" class="read_more"><br>Read More</a><span
+                  class="more_text" style="display:none;">y their tools and how they use them. They didn't even have to
+                  remove the door panel inside. Great job Johnny.”</span>”
+                <br><a href="#" class="show_less" style="display:none;">Less</a></span></div>
+            <div class="rr_review_name"> - <span>
+                Chris Trotta </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- carousel item -->
+
+        <div class="item">
+          <div class="testimonial">
+            <h3 class="rr_title">Great Service</h3>
+            <div class="clear"></div>
+            <span>
+              <div class="rr_review_post_id" style="display: none;">
+                <a href="https://disappeardents.com/review/">
+                  Review </a>
+              </div>
+
+              <div class="clear"></div>
+            </span>
+            <span class="rr_date" style="display:none;">
+              <meta content="2017-09-03 16:53:47">
+              <time datetime="Sunday, September 3, 2017">
+                Sunday, September 3, 2017 </time>
+            </span>
+            <div class="stars">
+              ★★★★★ </div>
+
+
+
+            <div class="clear"></div>
+
+            <div class="rr_review_text">
+              <span class="drop_cap">“</span>
+              <span>Ramiro and his team give top notch service, as a body shop General Manager I look for dependability
+                and q<span class="ellipses">... </span><a href="#" class="read_more"><br>Read More</a><span
+                  class="more_text" style="display:none;">uality and this is exactly what I receive when I call on
+                  Disappear Dents. -</span>”
+                <br><a href="#" class="show_less" style="display:none;">Less</a></span></div>
+            <div class="rr_review_name"> - <span>
+                Roosevelt Abron </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- carousel item -->
+
+        <div class="item">
+          <div class="testimonial">
+            <h3 class="rr_title">Amazing Service</h3>
+            <div class="clear"></div>
+            <span>
+              <div class="rr_review_post_id" style="display: none;">
+                <a href="https://disappeardents.com/review/">
+                  Review </a>
+              </div>
+
+              <div class="clear"></div>
+            </span>
+            <span class="rr_date" style="display:none;">
+              <meta content="2017-09-03 17:06:00">
+              <time datetime="Sunday, September 3, 2017">
+                Sunday, September 3, 2017 </time>
+            </span>
+            <div class="stars">
+              ★★★★★ </div>
+
+
+
+            <div class="clear"></div>
+
+            <div class="rr_review_text">
+              <span class="drop_cap">“</span>
+              <span>Ramiro and the Disappear Dents has been amazing to work with. The service was worth the money and
+                time. I<span class="ellipses">... </span><a href="#" class="read_more"><br>Read More</a><span
+                  class="more_text" style="display:none;">t's definitely a go-to for Paintless Dent Removal.</span>”
+                <br><a href="#" class="show_less" style="display:none;">Less</a></span></div>
+            <div class="rr_review_name"> - <span>
+                Jovin Delfin </span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- carousel item -->
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="col-md-6 col-md-offset-3">
+      <a class="btn btn-default btn-lg" style="margin-top:50px;" href="https://disappeardents.com/Review">Leave a
+        Review</a>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+  </section>
+  <!-- testimonialSection -->
+
+  <section class="container description_section" style="line-height:28px;">
+    <hr class="pull-left">
+    <br>
+    <br>
+    <h1 style="font-size:59px; margin-top:-20px;" class="pull-left">Disappear Dents</h1>
+    <br>
+    <br>
+
+    <div class="col-md-6">
+      <p>Dissapear Dents is a Chicago-based company, providing Paintless Dent Removal and Hail Damage repair for over 10
+        years. Our technicians are highly trained, skilled, and use state-of-the-art equipment to master the art of
+        paintless dent removal.
+        We service collision centers, auto dealers, and insurance companies, as well as manufacturers.
+        All our technicians have been trained and certified by the best in the PDR industry. Work done by Disappear
+        Dents is 100% guaranteed satisfaction.</p>
+
+      <p>Disappear Dents is experienced in working with body shops and insurance providers to effectively process
+        claims. Our technicians are professionally trained and highly experienced to handle and repair large hail
+        damages. Our catastrophe team is always ready to react quickly and efficiently, staffing a hail CAT can be done
+        within 24 hours of confirmed damages.</p>
+
+      <img src="assets/section 8/sec 8 - image.jpg">
+
+      <div style="margin-top:50px;">
+        <h1>Hail Damages</h1>
+        <p>Hail storms can leave behind big disasters. But dealing with a hail storm doesn’t have to mean headaches and
+          nightmares. Hail damage is fast and easy to repair when you trust Disappear Dents and our highly trained hail
+          repair technicians. Your vehicle will be restored to its original factory finish.</p>
+      </div>
+
+    </div>
+
+
+    <div class="col-md-offset-3 col-md-3 disDentsSideInfo">
+      <h3>FOLLOW US</h3>
+      <a href="https://www.facebook.com/disappeardents/">
+        <img src="assets/section 8/fb.svg" style="height: 45px;"></a>
+
+      <a href="https://www.linkedin.com/in/ramiro-resendez-0329a159">
+        <img src="assets/section 8/linkedin.svg" style="height: 45px;"></i></a>
+      <br>
+      <h2>Hours:</h2>
+      <p>9AM - 5PM Weekdays</p>
+      <p>9AM - 3PM Weekends</p>
+
+      <h2>Contact:</h2>
+      <p>1-(888)-963-3687</p>
+      <p>Serving All Chicago Area</p>
+      <br>
+      <div id="map" style="width: 300px; height: 200px; position: relative; overflow: hidden;">
+        <div
+          style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+          <div class="gm-style"
+            style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+            <div tabindex="0"
+              style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+              <div
+                style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                    <div style="position: absolute; z-index: 991; transform: matrix(1, 0, 0, 1, -95, -76);">
+                      <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
                       </div>
-                      
-                      <div class="col-md-6">
-                        <input type="time" class="form-control" name="appointment_time_1">
+                      <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
                       </div>
-
-                      <label>Appointment 2 <small>(date/time)</small></label>
-                      <hr>
-
-                      <div class="col-md-6">
-                        <input type="date" class="form-control" name="appointment_date_2">
+                      <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
                       </div>
-                      
-                      <div class="col-md-6">
-                        <input type="time" class="form-control" name="appointment_time_2">
+                      <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
                       </div>
-
-                      <label>Type of Appointment</label> <br>
-                      <label class="radio-inline">
-                        <input type="radio" name="appointment_type" value="drop_off"> Drop Off
-                      </label>
-                      <label class="radio-inline">
-                        <input type="radio" name="appointment_type" value="waiting"> Waiting
-                      </label>
-
-
                     </div>
                   </div>
-                </div><!-- appointment info panel -->
-
-                <!-- upload image panel -->
-                <div class="upload-panel col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Upload Image <i class="fa fa-calendar pull-right"></i></div>
-                    <div class="panel-body">
-                      <label class="btn btn-default btn-sm" for="my-file-selector" id="my-file-selector-label">
-                          <input name="fileToUpload[]" id="my-file-selector" type="file" style="display:none" multiple="" accept="image/jpg, image/jpeg, image/png, image/gif" onchange="$('#upload-file-info').html(this.files.length + ' file(s) selected')">Choose File...
-                      </label>
-                      <span class="label label-info" id="upload-file-info">4 file(s) selected</span>
-                      <div id="uploaded_images_div">
-                        <ul id="uploaded_images_list"></ul>
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                  <div style="position: absolute; z-index: 991; transform: matrix(1, 0, 0, 1, -95, -76);">
+                    <div
+                      style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://khms0.googleapis.com/kh?v=865&amp;hl=en-US&amp;x=130&amp;y=190&amp;z=9"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i9!2i130!3i190!4i256!2m3!1e0!2sm!3i500217370!3m12!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmapSatellite!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=119686"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div
+                        style="background-color: rgba(0, 0, 0, 0.5); position: absolute; overflow: hidden; top: 0px; left: 0px; width: 256px; height: 256px; z-index: 100;">
+                        <div
+                          style="color: white; font-family: Roboto, sans-serif; font-size: 14px; text-align: center; position: absolute; left: 0px; top: 50%; transform: translateY(-50%); max-height: 100%; width: 100%; overflow: hidden;">
+                          <span>For development purposes only</span></div>
+                      </div>
+                    </div>
+                    <div
+                      style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://khms1.googleapis.com/kh?v=865&amp;hl=en-US&amp;x=131&amp;y=189&amp;z=9"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i9!2i131!3i189!4i256!2m3!1e0!2sm!3i500217370!3m12!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmapSatellite!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=70022"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div
+                        style="background-color: rgba(0, 0, 0, 0.5); position: absolute; overflow: hidden; top: 0px; left: 0px; width: 256px; height: 256px; z-index: 100;">
+                        <div
+                          style="color: white; font-family: Roboto, sans-serif; font-size: 14px; text-align: center; position: absolute; left: 0px; top: 50%; transform: translateY(-50%); max-height: 100%; width: 100%; overflow: hidden;">
+                          <span>For development purposes only</span></div>
+                      </div>
+                    </div>
+                    <div
+                      style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://khms0.googleapis.com/kh?v=865&amp;hl=en-US&amp;x=130&amp;y=189&amp;z=9"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i9!2i130!3i189!4i256!2m3!1e0!2sm!3i500217370!3m12!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmapSatellite!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=106252"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div
+                        style="background-color: rgba(0, 0, 0, 0.5); position: absolute; overflow: hidden; top: 0px; left: 0px; width: 256px; height: 256px; z-index: 100;">
+                        <div
+                          style="color: white; font-family: Roboto, sans-serif; font-size: 14px; text-align: center; position: absolute; left: 0px; top: 50%; transform: translateY(-50%); max-height: 100%; width: 100%; overflow: hidden;">
+                          <span>For development purposes only</span></div>
+                      </div>
+                    </div>
+                    <div
+                      style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://khms1.googleapis.com/kh?v=865&amp;hl=en-US&amp;x=131&amp;y=190&amp;z=9"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><img draggable="false" alt=""
+                          role="presentation"
+                          src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i9!2i131!3i190!4i256!2m3!1e0!2sm!3i500217370!3m12!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmapSatellite!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=83456"
+                          style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                      </div>
+                      <div
+                        style="background-color: rgba(0, 0, 0, 0.5); position: absolute; overflow: hidden; top: 0px; left: 0px; width: 256px; height: 256px; z-index: 100;">
+                        <div
+                          style="color: white; font-family: Roboto, sans-serif; font-size: 14px; text-align: center; position: absolute; left: 0px; top: 50%; transform: translateY(-50%); max-height: 100%; width: 100%; overflow: hidden;">
+                          <span>For development purposes only</span></div>
                       </div>
                     </div>
                   </div>
-                </div><!-- upload image panel -->
+                </div>
+              </div>
+              <div class="gm-style-pbc"
+                style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                <p class="gm-style-pbt"></p>
+              </div>
+              <div
+                style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                <div
+                  style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                </div>
+              </div>
+            </div><iframe aria-hidden="true" frameborder="0" tabindex="-1"
+              style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+            <div
+              style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+              <a target="_blank" rel="noopener"
+                href="https://maps.google.com/maps?ll=41.8781,-87.6298&amp;z=9&amp;t=h&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3"
+                title="Open this area in Google Maps (opens a new window)"
+                style="position: static; overflow: visible; float: none; display: inline;">
+                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt=""
+                    src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false"
+                    style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                </div>
+              </a></div>
+            <div
+              style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 290px; height: 180px; position: absolute; left: 5px; top: 10px;">
+              <div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div>
+              <div style="font-size: 13px;">Map data ©2020 Imagery ©2020 TerraMetrics</div><button draggable="false"
+                title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect"
+                style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img
+                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                  style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button>
+            </div>
+            <div class="gmnoprint"
+              style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 55px;">
+              <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;"></div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                </div>
+                <div
+                  style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <a style="text-decoration: none; cursor: pointer;">Map Data</a><span style="display: none;">Map data
+                    ©2020 Imagery ©2020 TerraMetrics</span></div>
+              </div>
+            </div>
+            <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+              <div
+                style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                Map data ©2020 Imagery ©2020 TerraMetrics</div>
+            </div>
+            <div class="gmnoprint gm-style-cc" draggable="false"
+              style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+              <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                <div style="width: 1px;"></div>
+                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+              </div>
+              <div
+                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener"
+                  style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div>
+            </div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view"
+              type="button" class="gm-control-active gm-fullscreen-control"
+              style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px;"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px;"></button>
+            <div draggable="false" class="gm-style-cc"
+              style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+              <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                <div style="width: 1px;"></div>
+                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+              </div>
+              <div
+                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                <a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google"
+                  href="https://www.google.com/maps/@41.8781,-87.6298,9z/data=!3m1!1e3!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                  style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
+                  a map error</a></div>
+            </div>
+            <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40"
+              controlheight="113"
+              style="margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;">
+              <div class="gmnoprint" controlwidth="40" controlheight="81"
+                style="position: absolute; left: 0px; top: 32px;">
+                <div draggable="false"
+                  style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
+                  <button draggable="false" title="Zoom in" aria-label="Zoom in" type="button" class="gm-control-active"
+                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"></button>
+                  <div
+                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
+                  </div><button draggable="false" title="Zoom out" aria-label="Zoom out" type="button"
+                    class="gm-control-active"
+                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"></button>
+                </div>
+              </div>
+              <div style="position: absolute; left: 20px; top: 0px;"></div>
+              <div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;">
+                <div style="width: 40px; height: 40px;"><button draggable="false" title="Rotate map 90 degrees"
+                    aria-label="Rotate map 90 degrees" type="button" class="gm-control-active"
+                    style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px;"></button><button draggable="false" title="Tilt map"
+                    aria-label="Tilt map" type="button" class="gm-tilt gm-control-active"
+                    style="background: none rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px;"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px;"></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
+          <div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false"
+              style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;">
+          </div>
+          <div style="line-height: 20px; margin: 15px 0px;"><span
+              style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps correctly.</span>
+          </div>
+          <table style="width: 100%;">
+            <tr>
+              <td style="line-height: 16px; vertical-align: middle;"><a
+                  href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=keyless#api-key-and-billing-errors"
+                  target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this
+                  website?</a></td>
+              <td style="text-align: right;"><button class="dismissButton">OK</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <!-- vehicle information panel -->
-                <div class="vehicle-panel col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Vehicle Information <i class="fa fa-car pull-right"></i></div>
-                    <div class="panel-body">
-                      <input type="text" class="form-control" name="year" id="year" placeholder="Year">
-                      <input type="text" class="form-control" name="make" id="make" placeholder="Make">
-                      <input type="text" class="form-control" name="model" id="model" placeholder="Model">
-                    </div>
-                  </div>
-                </div><!-- vehicle information panel -->
+  <!-- CONTACT US -->
+  <section id="contact_us" class="contact_us_section">
 
-                <!-- comments panel -->
-                <div class="comments-panel col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Requests / Comments <i class="fa fa-commenting pull-right"></i></div>
-                    <div class="panel-body">
-                      <textarea name="comment" id="comment" class="form-control"></textarea>
-                    </div>
+    <hr>
+
+    <h1>CONTACT US</h1>
+
+    <form class="col-md-6 col-md-offset-3 contact_us_form">
+
+      <div class="col-md-6">
+        <input type="text" placeholder="Name" class="form-control">
+      </div>
+
+      <div class="col-md-6">
+        <input type="text" placeholder="Email" class="form-control">
+      </div>
+
+      <div class="col-md-6">
+        <input type="text" placeholder="Mobile No." class="form-control">
+      </div>
+
+      <div class="col-md-6">
+        <input type="text" placeholder="Company" class="form-control">
+      </div>
+
+      <div class="col-md-12">
+        <textarea name="message" cols="40" rows="10" maxlength="48" aria-invalid="false" placeholder="Message"
+          required="" class="form-control"></textarea>
+      </div>
+
+      <button class="btn btn-success col-md-4 col-md-offset-4">LEAVE A MESSAGE </button>
+    </form>
+
+    <div class="clearfix"></div>
+  </section>
+
+  <footer>
+    <h3>@ Disappear Dents Copyright 2020</h3>
+
+    <p>Disappear Dents is a Chicago-based company, providing Paintless Dent Removal and Hail Damage repair for over 10
+      years. Our technicians</p>
+    <p>are highly trained, skilled, and use state-of-the-art equipment to master the art of paintless dent removal.</p>
+  </footer>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    style="display: none;">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="myModalLabel">Appointment details</h4>
+        </div>
+        <form class="schedule-form" id="schedule_form">
+          <input type="hidden" name="action" value="addAppointment">
+          <div class="modal-body clearfix">
+
+            <!-- personal info panel -->
+            <div class="personal-panel col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Personal Information <i class="fa fa-user pull-right"></i></div>
+                <div class="panel-body">
+
+                  <input type="text" class="form-control" name="name" placeholder="Name" required="">
+                  <input type="tel" class="form-control" name="phone" placeholder="Phone" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                  <input type="text" class="form-control" name="location" placeholder="Location" required="">
+
+                  <label>Preferred contact method</label> <br>
+                  <label class="radio-inline">
+                    <input type="radio" name="contact_method" value="call"> Phone call
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="contact_method" value="text"> Text
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="contact_method" value="email"> Email
+                  </label>
+
+                </div><!-- panel-body -->
+              </div><!-- panel -->
+            </div><!-- personal info panel -->
+
+            <!-- appointment info panel -->
+            <div class="appointment-panel col-md-6 hidden">
+              <div class="panel panel-default">
+                <div class="panel-heading">Appointment Information <i class="fa fa-calendar pull-right"></i></div>
+                <div class="panel-body">
+
+                  <label>Appointment 1 <small>(date/time)</small></label>
+                  <hr>
+
+                  <div class="col-md-6">
+                    <input type="date" class="form-control" name="appointment_date_1">
                   </div>
-                </div><!-- comments panel -->
-          
-        </div><!-- modal-body -->
-        <div class="modal-footer">
-          <div class="col-md-12"><button type="button" id="submit_appointment" class="btn btn-success">Submit</button></div>
-        </div><!-- modal-footer -->
-        
+
+                  <div class="col-md-6">
+                    <input type="time" class="form-control" name="appointment_time_1">
+                  </div>
+
+                  <label>Appointment 2 <small>(date/time)</small></label>
+                  <hr>
+
+                  <div class="col-md-6">
+                    <input type="date" class="form-control" name="appointment_date_2">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="time" class="form-control" name="appointment_time_2">
+                  </div>
+
+                  <label>Type of Appointment</label> <br>
+                  <label class="radio-inline">
+                    <input type="radio" name="appointment_type" value="drop_off"> Drop Off
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="appointment_type" value="waiting"> Waiting
+                  </label>
+
+
+                </div>
+              </div>
+            </div><!-- appointment info panel -->
+
+            <!-- upload image panel -->
+            <div class="upload-panel col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Upload Image <i class="fa fa-calendar pull-right"></i></div>
+                <div class="panel-body">
+                  <label class="btn btn-default btn-sm" for="my-file-selector" id="my-file-selector-label">
+                    <input name="fileToUpload[]" id="my-file-selector" type="file" style="display:none" multiple=""
+                      accept="image/jpg, image/jpeg, image/png, image/gif"
+                      onchange="$('#upload-file-info').html(this.files.length + ' file(s) selected')">Choose File...
+                  </label>
+                  <span class="label label-info" id="upload-file-info"></span>
+                  <div id="uploaded_images_div">
+                    <ul id="uploaded_images_list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div><!-- upload image panel -->
+
+            <!-- vehicle information panel -->
+            <div class="vehicle-panel col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Vehicle Information <i class="fa fa-car pull-right"></i></div>
+                <div class="panel-body">
+                  <input type="text" class="form-control" name="year" placeholder="Year">
+                  <input type="text" class="form-control" name="make" placeholder="Make">
+                  <input type="text" class="form-control" name="model" placeholder="Model">
+                </div>
+              </div>
+            </div><!-- vehicle information panel -->
+
+            <!-- comments panel -->
+            <div class="comments-panel col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Requests / Comments <i class="fa fa-commenting pull-right"></i></div>
+                <div class="panel-body">
+                  <textarea name="comment" class="form-control"></textarea>
+                </div>
+              </div>
+            </div><!-- comments panel -->
+
+          </div><!-- modal-body -->
+          <div class="modal-footer">
+            <div class="col-md-12"><button type="submit" id="submit_appointment" class="btn btn-success">Submit</button>
+            </div>
+          </div><!-- modal-footer -->
+        </form>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div>
 </body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <!-- <script src="/__/firebase/7.9.1/firebase-app.js"></script> -->
+<!-- Add Firebase products that you want to use -->
+<!-- <script src="/__/firebase/7.9.1/firebase-auth.js"></script> -->
+<!-- <script src="/__/firebase/7.9.1/firebase-database.js"></script> -->
 
-    <!-- Add Firebase products that you want to use -->
-    <!-- <script src="/__/firebase/7.9.1/firebase-auth.js"></script> -->
-    <!-- <script src="/__/firebase/7.9.1/firebase-database.js"></script> -->
+<!-- Initialize Firebase -->
+<!-- <script src="/__/firebase/init.js"></script> -->
 
-    <!-- Initialize Firebase -->
-    <!-- <script src="/__/firebase/init.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script>
+  $('#submit_appointment').on('click', function () {
+    submit_quote();
+  })
 
-    <script>
-        $('#submit_appointment').on('click', function(){
-            submit_quote();
-        })
-        
-        function submit_quote(){
+  function submit_quote() {
 
-            // Your web app's Firebase configuration
-            var firebaseConfig = {
-            apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
-            authDomain: "giveitupandtradeapp.firebaseapp.com",
-            databaseURL: "https://giveitupandtradeapp.firebaseio.com",
-            projectId: "giveitupandtradeapp",
-            storageBucket: "giveitupandtradeapp.appspot.com",
-            messagingSenderId: "860167260317",
-            appId: "1:860167260317:web:d68cd05feb7c782974ec74"
-            };
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCldHDM93R6IuOmXx97q-fQgq55rByvwRw",
+      authDomain: "giveitupandtradeapp.firebaseapp.com",
+      databaseURL: "https://giveitupandtradeapp.firebaseio.com",
+      projectId: "giveitupandtradeapp",
+      storageBucket: "giveitupandtradeapp.appspot.com",
+      messagingSenderId: "860167260317",
+      appId: "1:860167260317:web:d68cd05feb7c782974ec74"
+    };
 
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
-            var db = firebase.firestore();
-            var quoteRef = db.collection("quotes")
+    var db = firebase.firestore();
+    var quoteRef = db.collection("quotes")
 
-            var name = $('#name').val()
-            var phone = $('#phone').val()
-            var email = $('#email').val()
-            var location = $('#location').val()
+    var name = $('#name').val()
+    var phone = $('#phone').val()
+    var email = $('#email').val()
+    var location = $('#location').val()
 
-            var year = $('#year').val()
-            var make = $('#make').val()
-            var model = $('#model').val()
+    var year = $('#year').val()
+    var make = $('#make').val()
+    var model = $('#model').val()
 
-            var comment = $('#comment').val()
+    var comment = $('#comment').val()
 
-            quoteRef.add({
-                user: {"name" : name, "phone" : phone, "email" : email, "location" : location},
-                vehicle: {"year" : year, "make" : make, "model" : model},
-                comment : comment,
-                images: ["",""]
-            }).then(function(){
-                console.log("success!")
-            }).catch(function(error) {
-                console.log("error: " + error)
-            })
+    quoteRef.add({
+      user: { "name": name, "phone": phone, "email": email, "location": location },
+      vehicle: { "year": year, "make": make, "model": model },
+      comment: comment,
+      images: ["", ""]
+    }).then(function () {
+      console.log("success!")
+    }).catch(function (error) {
+      console.log("error: " + error)
+    })
 
-            return false;
-        }
-     
+    return false;
+  }
+
 
         // // Read Data
         // ref.once('value', function(snapshot) {
         //     snapshot.forEach(function(childSnapshot) {
         //         var childKey = childSnapshot.key;
         //         var childData = childSnapshot.val();
-                
+
         //         console.log(childKey)
         //         console.log(childData)
         //     });
         // });
 
-        
 
 
 
-      </script>
+
+</script>
 
 </html>
