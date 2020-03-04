@@ -31,7 +31,7 @@
       padding-bottom: 100px;
       padding-top: 30px;
       background-size: cover;
-      background-image: url('/assets/section4/section 4 - bg.jpg');
+      background-image: url('/assets/footer/footer - bg.jpg');
     }
 
     .contact_us_section hr {
@@ -105,6 +105,8 @@
       text-align: center;
       padding-top: 50px;
       padding-bottom: 150px;
+      background-size: cover;
+      background-image: url('assets/section 7/sec 7 bg.jpg');
     }
 
     .testimonialSection hr {
@@ -122,7 +124,7 @@
       background-color: rgba(255, 255, 255, 0.82);
     }
 
-    .blogPosts{
+    .blogPosts {
       padding-top: 50px;
       padding-bottom: 150px;
     }
@@ -134,20 +136,428 @@
     .blogPosts button {
       text-align: center;
     }
+
     .blogPosts a {
       text-align: center;
+    }
+
+    .ourWorksAndServiceSection {
+      padding-top: 50px;
+      padding-bottom: 150px;
+
+      background-size: cover;
+      background-image: url('assets/section 5/section 5 - bg.jpg');
+    }
+
+    .mobileAppSection {
+      color: white;
+    }
+
+    .whyBeneficialSection {
+      color: white;
+      padding-top: 50px;
+      padding-bottom: 150px;
+
+      padding-left: 50px;
+      padding-right: 50px;
+
+      background-size: cover;
+      background-image: url('assets/section 4/section 4 - bg.jpg');
+    }
+
+    .whyDisappearDents {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .whyDisappearDents h4 {
+      padding-left: 10px;
+      margin-top: 0px;
+      border-left: 5px solid #4cae4c;
+    }
+
+    /* .topSection {
+      
+    }
+
+    .topSection button{
+      height: 55px;
+    } */
+
+    header {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      text-align: center;
+      color: white;
+
+      padding-top: 37vh;
+
+      position: relative;
+      background-color: black;
+      height: 100vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.8;
+      z-index: 1;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+      header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      }
+
+      header video {
+        display: none;
+      }
+    }
+
+
+    .navbar {
+      -webkit-transition: all 0.6s ease-out;
+      -moz-transition: all 0.6s ease-out;
+      -o-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
+
+      background: rgb(40, 39, 40);
+      /* IE */
+      background: rgba(40, 39, 40, 0);
+      /* NON-IE */
+
+      border: none;
+      color: white;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+      color: white;
+      border-bottom: none;
+    }
+
+    .navbar.scrolled {
+      background: rgb(40, 39, 40);
+      /* IE */
+      background: rgba(40, 39, 40, 1);
+      /* NON-IE */
+
+      border-bottom: solid #101010 1px;
+
+      -webkit-transition: all 0.6s ease-out;
+      -moz-transition: all 0.6s ease-out;
+      -o-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
     }
   </style>
 </head>
 
 <body>
-  <!-- <h1>Disappear Dents Web App</h1>
 
-  <a class="btn" href="#" data-toggle="modal" data-target="#myModal">GET A QUOTE NOW</a> -->
+  <style>
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
 
+    .navbar .nav-links {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+  </style>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="row" style="padding-top: 10;
+                              padding-bottom: 10;
+                              padding-left: 50;
+                              padding-right: 50;
+                              display: flex; align-items: center;">
+
+        <div class="col-xs-3">
+          <div style="display: flex; align-items: center;">
+            <div class="inline">
+              <img src="assets/dd_badge_new.png" height="30">
+            </div>
+            <div class="inline" style="margin-left: 15px;">
+              <h4 class="title" style="margin-top: 0px; margin-bottom: 0px;">DISAPPEAR DENTS</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-6 nav-links">
+          <a href="https://disappeardents.com">Home</a>
+          <a href="https://disappeardents.com">Portfolios</a>
+          <a href="https://disappeardents.com">Contact Us</a>
+          <a href="https://disappeardents.com">Career</a>
+          <a href="https://disappeardents.com">Gallery</a>
+        </div>
+
+        <div class="col-xs-3">
+          <p style="text-align: end;"> +1 (888) 963-3687</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" autoplay muted="muted" loop="loop">
+      <source src="assets/MainHeaderVideo.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+
+          <h1 class="heroText">WE FIX IT RIGHT</h1>
+          <h2 class="heroSubText">Repair your Dents Now</h2>
+          <button class="btn btn-success" href="#" data-toggle="modal" data-target="#myModal">GET A QUOTE NOW</button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="whyDisappearDents">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-1">
+
+          <img src="assets/section 2/proven.png">
+        </div>
+        <div class="col-md-4">
+          <h4>Proven Technology</h4>
+          <p>Paintless Dent Repair is a skillful art process that allows technicians to restore panels to their original
+            shape. We remove dings, hail damage, and creases, while keeping the vehicle’s factory finish.</p>
+        </div>
+        <div class="col-md-offset-2 col-md-1">
+          <img src="assets/section 2/winning.png">
+        </div>
+        <div class="col-md-4">
+          <h4>Winning Culture</h4>
+          <p>Disappear Dents is a professional dent repair service with over ten years of experience working with
+            insurance agencies, dealerships, body shops, and individual owners.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-md-1">
+          <img src="assets/section 2/results.png">
+        </div>
+        <div class="col-md-4">
+          <h4>Results Driven</h4>
+          <p>Dents and dings are mostly unavoidable. Parking lots, shopping carts and road debris all can cause damage
+            to your vehicle and decrease its value. Disappear Dents answers your vehicle’s call for help against these
+            hazards!</p>
+        </div>
+        <div class="col-md-offset-2 col-md-1">
+          <img src="assets/section 2/top.png">
+        </div>
+        <div class="col-md-4">
+          <h4>Top Performance</h4>
+          <p>Getting your vehicle back to its original factory finish and keeping its value is easier and faster than
+            you think. Disappear Dents offers the most reliable and fastest paintless dent repair, guaranteed to be the
+            best quality.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- MOBILE APP -->
+  <section class="mobileAppSection">
+
+    <div class="row">
+
+      <div class="col-xs-9 container" style="background-color: #282728; height: 690px;">
+        <div class="container" style="padding-top: 50;">
+          <h2>Featuring Our Mobile App</h2>
+          <h1>DISAPPEAR DENTS</h1>
+
+          <div class="row" style="margin-top: 50px">
+
+            <div class="col-xs-3">
+              <img class="pull-right" src="assets/section 3/app icon@1x.svg">
+            </div>
+
+            <div class="col-xs-4">
+              <p>A mobile app for creating quotes for your automobile. You can select your vehicle from our large file
+                of vehicles or scan from your specific VIN. We will provide you real time updates with our scheduling
+                feature. Your quote can be ready to print out making it easy for you to communicate with disappear dents
+                team.</p>
+            </div>
+
+          </div>
+
+          <div class="row" style="margin-top: 50px">
+
+            <div class="col-xs-3">
+              <img class="pull-right" src="assets/section 3/Appstore.svg">
+            </div>
+
+            <div class="col-xs-9">
+              <img class="pull-left" src="assets/section 3/Playstore.svg">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-xs-3" style="background-color: #17BC28; height: 690px">
+        <img class="pull-right" style="height: 900px; margin-right: 60px; margin-top: 50px; margin-bottom: -267px;"
+          src="assets/section 3/sec 3 - image.png">
+      </div>
+
+    </div>
+
+  </section>
+  <!-- mobileapp -->
+
+  <!-- WHY BENEFICIAL -->
+  <section class="whyBeneficialSection" style="padding-top: 200px;">
+
+    <div class="row">
+      <div class="col-xs-6">
+        <h2>WHY ITS BENEFICIAL TO USE OUR COMPANY</h2>
+
+        <ul>
+          <li>Sed ut perspiciatis unde omnis iste</li>
+          <li>Ut enim ad minima veniam</li>
+          <li>Nemo enim ipsam voluptatem</li>
+          <li>Excepteur sint occaecat</li>
+          <li>Dui aute irure dolor</li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6">
+        <video width="100%" height="480" style="margin-top: 100;" controls>
+          <source src="assets/ddappvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- whyBeneficial -->
+
+  <!-- OUR WORKS AND SERVICE -->
+  <section class="ourWorksAndServiceSection">
+    <div class="container">
+
+      <div class="ourServiceText">
+        <div class="ourServiceHeaderText">
+          <h1>Our Service</h1>
+          <p>We integrate seamlessly with <span style="font-weight:700;">Dealers &amp; Body Shops</span></p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="assets/section 5/understand.png">
+            <br>
+            <h3>We Understand Workflow</h3>
+            <p>Our teams are trained to handle heavy workflow, we do everything from estimating to dealing with clients
+              and insurance companies.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assets/section 5/best.png">
+            <br>
+            <h3>Best Solutions</h3>
+            <p>Disappear Dents offers the best service and solutions to our Body Shops and their customers for hail
+              claims. Disappear Dents catastrophe teams manage entire hail damages very seamlessly and effectively.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assets/section 5/quick.png">
+            <br>
+            <h3>Quick Turnaround</h3>
+            <p>We work together with body shop staff to effectively move inventory and turnover sales. Our quick
+              turnover, gets satisfied customers back on the road, and cars back to their original factory finish
+              without sacrificing quality.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ourWorks">
+        <h1>Our Works</h1>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <hr>
+            <h2>LARGE DING</h2>
+            <p>A Ding from a shopping cart collision. Using Paintless Dent Repair techniques, paint is back to its
+              original smoothness.</p>
+          </div>
+          <div class="col-xs-4"><img src="assets/section 5/large ding - before.jpg"></div>
+          <div class="col-xs-4"><img src="assets/section 5/large ding - after.jpg"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4"><img src="assets/section 5/fender dent - before.jpg"></div>
+          <div class="col-xs-4"><img src="assets/section 5/fender dent - after.jpg"></div>
+          <div class="col-xs-4">
+            <hr>
+            <h2>FENDER DENT</h2>
+            <p>This fender has a very unique dent problem. Not anymore! Disappear Dents has made the dent disappear!</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <hr>
+            <h2>ANOTHER EXAMPLE</h2>
+            <p>Without Disappear Dents this repair would have taken a while. Less than half an hour later, the dent is
+              gone!</p>
+          </div>
+          <div class="col-xs-4"><img src="assets/section 5/another example - before.jpg"></div>
+          <div class="col-xs-4"><img src="assets/section 5/another example - after.jpg"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ourWorksAndService -->
+
+  <!-- BLOG POSTS -->
   <section class="blogPosts">
-    <div class="container"
-      style="text-align: center;">
+    <div class="container" style="text-align: center;">
       <div class="row" style="margin-bottom:50px;">
 
         <h1>THIS WEEK IN DISAPPEAR DENTS</h1>
@@ -156,8 +566,7 @@
 
       <div class="row">
         <div class="col-md-5">
-          <img class="pull-right"
-            style="margin-top:60px; margin-bottom:30px; margin-top: 0px;"
+          <img class="pull-right" style="margin-top:60px; margin-bottom:30px; margin-top: 0px;"
             src="assets/section 6/hail technicians.jpg">
         </div>
 
@@ -174,14 +583,15 @@
         </div>
       </div>
 
-      <a class="btn btn-default btn-lg" style="margin-top:50px;" href="https://disappeardents.com/gallery">View our gallery</a>
+      <a class="btn btn-default btn-lg" style="margin-top:50px;" href="https://disappeardents.com/gallery">View our
+        gallery</a>
 
     </div>
   </section>
   <!-- blogPosts -->
 
-  <section class="testimonialSection"
-    style="background-size:cover; background-image: url('assets/section 7/sec 7 bg.jpg');">
+  <!-- TESTIMONIALS -->
+  <section class="testimonialSection">
 
     <div class="row">
       <hr>
@@ -338,6 +748,7 @@
   </section>
   <!-- testimonialSection -->
 
+  <!-- DESCRIPTION -->
   <section class="container description_section" style="line-height:28px;">
     <hr class="pull-left">
     <br>
@@ -693,6 +1104,7 @@
     <div class="clearfix"></div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <h3>@ Disappear Dents Copyright 2020</h3>
 
@@ -701,6 +1113,7 @@
     <p>are highly trained, skilled, and use state-of-the-art equipment to master the art of paintless dent removal.</p>
   </footer>
 
+  <!-- CREATE QUOTE -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     style="display: none;">
     <div class="modal-dialog modal-lg" role="document">
@@ -830,6 +1243,7 @@
       </div><!-- modal-content -->
     </div><!-- modal-dialog -->
   </div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -850,6 +1264,36 @@
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
 
 <script>
+
+
+  function checkScroll() {
+    console.log("test")
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if ($(window).scrollTop() > startY) {
+      $('.navbar').addClass("scrolled");
+    } else {
+
+      $('.navbar').removeClass("scrolled");
+    }
+  }
+
+  if ($('.navbar').length > 0) {
+    $(window).on("scroll load resize", function () {
+      checkScroll();
+    });
+  }
+</script>
+<script>
+
+  checkScroll()
+
+  $(window).scroll(function () {
+    checkScroll()
+  });
+
+
+
   $('#submit_appointment').on('click', function () {
     submit_quote();
   })
