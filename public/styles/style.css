@@ -10,8 +10,10 @@ body {
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
   background: rgba(40, 39, 40, 0);
-  border: none;
   color: #FBFBFB;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .navbar a {
@@ -25,7 +27,6 @@ body {
 
 .navbar.scrolled {
   background: #282728;
-  border-bottom: solid #101010 1px;
   -webkit-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
 }
