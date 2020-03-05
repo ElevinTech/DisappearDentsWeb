@@ -1,0 +1,385 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.modal-body input {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  background: rgba(40, 39, 40, 0);
+  border: none;
+  color: #FBFBFB;
+}
+
+.navbar a {
+  color: #FBFBFB;
+  border-bottom: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar.scrolled {
+  background: #282728;
+  border-bottom: solid #101010 1px;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo-container .logo-title {
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar .phone-number {
+  text-align: end;
+}
+
+.navbar .links {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.navbar .navbar-collapse .row {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: #FBFBFB;
+  padding-top: 37vh;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #101010;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.whyDisappearDents {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.whyDisappearDents h4 {
+  padding-left: 10px;
+  margin-top: 0px;
+  border-left: 5px solid #4cae4c;
+}
+
+.whyDisappearDents .second-row {
+  margin-top: 50px;
+}
+
+.mobileAppSection {
+  color: #FBFBFB;
+}
+
+.mobileAppSection .left-side {
+  background-color: #282728;
+  height: 690px;
+}
+
+.mobileAppSection .left-side .container {
+  padding-top: 50;
+}
+
+.mobileAppSection .left-side .container .row {
+  margin-top: 50px;
+}
+
+.mobileAppSection .right-side {
+  background-color: #17BC28;
+  height: 690px;
+}
+
+.mobileAppSection .right-side .mobile-app-image {
+  height: 900px;
+  margin-right: 60px;
+  margin-top: 50px;
+  margin-bottom: -267px;
+}
+
+.whyBeneficialSection {
+  color: #FBFBFB;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-size: cover;
+  background-image: url("../assets/section 4/section 4 - bg.jpg");
+}
+
+.whyBeneficialSection video {
+  margin-top: 100;
+}
+
+.ourWorksAndServiceSection {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-image: url("../assets/section 5/section 5 - bg.jpg");
+}
+
+.ourWorksAndServiceSection .ourService h1 {
+  font-size: 64px;
+}
+
+.ourWorksAndServiceSection .ourWorks h1 {
+  font-size: 64px;
+  margin-bottom: 70px;
+}
+
+.ourWorksAndServiceSection .ourWorks .before-after-images {
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.blogPosts {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.blogPosts .container {
+  text-align: center;
+}
+
+.blogPosts .post-image {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.blogPosts .post-content {
+  text-align: left;
+}
+
+.blogPosts .post-content hr {
+  width: 110px;
+  margin-left: 0;
+}
+
+.blogPosts .post-content .title {
+  margin-top: 0;
+}
+
+.blogPosts .post-content .date {
+  font-size: 14px;
+  color: #696969;
+  font-weight: 700;
+}
+
+.blogPosts h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.blogPosts button {
+  text-align: center;
+}
+
+.blogPosts a {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonialSection {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-image: url("../assets/section 7/sec 7 bg.jpg");
+}
+
+.testimonialSection hr {
+  margin-bottom: 0px;
+  border-top: 8px solid #4cae4c;
+  width: 6%;
+}
+
+.testimonialSection h3 {
+  color: #FBFBFB;
+}
+
+.testimonialSection .sub-title {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #FFF;
+}
+
+.testimonialSection .carousel {
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+.testimonialSection .leave-review-button {
+  margin-top: 50px;
+}
+
+.description_section {
+  padding-bottom: 150px;
+  line-height: 28px;
+}
+
+.description_section hr {
+  margin-bottom: 10px;
+  border-top: 8px solid #4cae4c;
+  width: 9%;
+}
+
+.description_section img {
+  max-width: 100%;
+}
+
+.description_section .title {
+  font-size: 59px;
+  margin-top: -20px;
+}
+
+.description_section .hail-damages {
+  margin-top: 50px;
+}
+
+.description_section .disDentsSideInfo {
+  border-left: #cacaca;
+  border-left-style: solid;
+  padding-left: 50px;
+  border-left-width: 1px;
+}
+
+.description_section .social-media {
+  height: 45px;
+}
+
+.contact_us_section {
+  padding-bottom: 100px;
+  padding-top: 30px;
+  background-size: cover;
+  background-image: url("../assets/footer/footer - bg.jpg");
+}
+
+.contact_us_section hr {
+  margin-bottom: 0px;
+  border-top: 8px solid #4cae4c;
+  width: 6%;
+}
+
+.contact_us_section h1 {
+  text-align: center;
+  color: #FBFBFB;
+  font-weight: bold;
+  margin-bottom: 50;
+  margin-top: 15px;
+  font-size: 33px;
+}
+
+.contact_us_section form {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.contact_us_section form input {
+  height: 55px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 4px 4px 4px 15px;
+  width: 100%;
+  color: #FBFBFB;
+  font-size: 17px;
+  border-radius: 0;
+}
+
+.contact_us_section form textarea {
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 4px 4px 4px 15px;
+  width: 100%;
+  color: #FBFBFB;
+  font-size: 17px;
+  border-radius: 0;
+}
+
+.contact_us_section form button {
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 50px;
+  background-color: black;
+}
+
+footer h3 {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #17BC28;
+  text-align: center;
+}
+
+footer p {
+  color: #FBFBFB;
+  font-size: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
