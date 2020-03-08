@@ -146,6 +146,12 @@ header h2 {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 48px;
+  }
+}
+
 header .btn {
   font-size: 15px;
   width: 230px;
@@ -220,6 +226,17 @@ header .btn {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .mobileAppSection .left-side h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.mobileAppSection .img-container-sm {
+  margin-bottom: 32px;
+}
+
 @media (min-width: 768px) {
   .mobileAppSection .img-container-sm {
     display: none;
@@ -290,9 +307,21 @@ header .btn {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .whyBeneficialSection h2 {
+    font-size: 32px;
+  }
+}
+
 .whyBeneficialSection ul > li {
   font-size: 24px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .whyBeneficialSection ul > li {
+    font-size: 20px;
+  }
 }
 
 .whyBeneficialSection .video-container {
