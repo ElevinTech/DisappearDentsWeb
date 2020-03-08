@@ -23,6 +23,14 @@ body {
   padding-top: 15px;
   padding-left: 64px;
   padding-right: 64px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .navbar a {
@@ -146,8 +154,8 @@ header .btn {
 }
 
 .whyDisappearDents {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -254,8 +262,6 @@ header .btn {
   color: #FBFBFB;
   padding-top: 150px;
   padding-bottom: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
   background-size: cover;
   background-image: url("../assets/section 4/section 4 - bg.jpg");
 }
@@ -295,18 +301,72 @@ header .btn {
 
 .ourWorksAndServiceSection {
   padding-top: 50px;
-  padding-bottom: 150px;
   background-size: cover;
   background-image: url("../assets/section 5/section 5 - bg.jpg");
 }
 
+.ourWorksAndServiceSection .fade-bottom {
+  padding-bottom: 150px;
+}
+
 .ourWorksAndServiceSection .ourService h1 {
   font-size: 64px;
+  font-weight: 500;
+}
+
+.ourWorksAndServiceSection .ourService h3 {
+  font-weight: bold;
+}
+
+.ourWorksAndServiceSection .ourService .our-service-item {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.ourWorksAndServiceSection .ourService .our-service-item p {
+  font-weight: 600;
+}
+
+.ourWorksAndServiceSection .ourService .our-service-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+
+.ourWorksAndServiceSection .ourService .we-understand-text {
+  color: #17bb27;
+}
+
+.ourWorksAndServiceSection .ourService .best-solutions-text {
+  color: #ff8800;
+}
+
+.ourWorksAndServiceSection .ourService .quick-turnaround-text {
+  color: #3291ff;
 }
 
 .ourWorksAndServiceSection .ourWorks h1 {
   font-size: 64px;
+  font-weight: 500;
   margin-bottom: 70px;
+}
+
+.ourWorksAndServiceSection .ourWorks h2 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.ourWorksAndServiceSection .ourWorks hr {
+  text-align: left;
+  border-top: 12px solid #17bb27;
+  width: 32%;
+}
+
+.ourWorksAndServiceSection .ourWorks p {
+  max-width: 75%;
+  margin-top: 32px;
+  font-size: 22px;
+  color: #696969;
 }
 
 .ourWorksAndServiceSection .ourWorks .before-after-images {
@@ -317,6 +377,16 @@ header .btn {
 .blogPosts {
   padding-top: 50px;
   padding-bottom: 150px;
+}
+
+.blogPosts hr {
+  border-top: 12px solid #17bb27;
+  width: 12%;
+}
+
+.blogPosts h1 {
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .blogPosts .container {
@@ -349,12 +419,18 @@ header .btn {
 
 .blogPosts .post-content .title {
   margin-top: 0;
+  font-weight: 900;
 }
 
 .blogPosts .post-content .date {
-  font-size: 14px;
+  font-size: 18px;
   color: #696969;
-  font-weight: 700;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.blogPosts .post-content .body {
+  font-size: 20px;
 }
 
 .blogPosts h1 {
@@ -369,6 +445,25 @@ header .btn {
 .blogPosts a {
   text-align: center;
   margin-top: 50px;
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: #18BC28;
+  border-width: 2px;
+  color: #18BC28;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.blogPosts a:hover {
+  text-align: center;
+  margin-top: 50px;
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: #18BC28;
+  border-width: 2px;
+  color: #18BC28;
+  font-weight: 400;
+  padding: 20px;
 }
 
 .testimonialSection {
@@ -387,31 +482,86 @@ header .btn {
 
 .testimonialSection h3 {
   color: #FBFBFB;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .testimonialSection .sub-title {
-  font-size: 16px;
-  margin-top: 15px;
+  font-size: 20px;
+  margin-top: 0px;
   color: #FFF;
+  margin-bottom: 64px;
 }
 
 .testimonialSection .carousel {
-  height: 350px;
-  background-color: rgba(255, 255, 255, 0.82);
+  border-radius: 5px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .testimonialSection .leave-review-button {
   margin-top: 50px;
 }
 
+.testimonialSection .testimonials {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 16px;
+}
+
+.testimonialSection .testimonials .rr_title {
+  color: #282728;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.testimonialSection .testimonials .stars {
+  margin-top: -10px;
+  font-size: 40px;
+  color: #18BC28;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.testimonialSection .testimonials .rr_review_text {
+  font-size: 20px;
+}
+
+.testimonialSection .testimonials .rr_review_name {
+  margin-top: 24px;
+  color: #18BC28;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.testimonialSection .testimonials .carousel-indicators {
+  margin-top: 24px;
+}
+
+.testimonialSection .testimonials .carousel-indicators li {
+  background-color: #282728;
+}
+
+.testimonialSection .testimonials .carousel-indicators li.active {
+  background-color: #18BC28;
+}
+
 .description_section {
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   line-height: 28px;
+}
+
+.description_section h1 {
+  font-weight: 900;
 }
 
 .description_section hr {
   margin-bottom: 10px;
-  border-top: 8px solid #4cae4c;
+  border-top: 12px solid #4cae4c;
   width: 9%;
 }
 
@@ -419,9 +569,15 @@ header .btn {
   max-width: 100%;
 }
 
+.description_section p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 .description_section .title {
   font-size: 59px;
   margin-top: -20px;
+  font-weight: 900;
 }
 
 .description_section .hail-damages {
@@ -429,21 +585,49 @@ header .btn {
 }
 
 .description_section .disDentsSideInfo {
+  margin-top: 24px;
   border-left: #cacaca;
   border-left-style: solid;
   padding-left: 50px;
   border-left-width: 1px;
 }
 
+.description_section .disDentsSideInfo hr {
+  margin-bottom: 0px;
+  border-top: 5px solid #4cae4c;
+  width: 50%;
+}
+
+.description_section .disDentsSideInfo h3 {
+  font-weight: 900;
+}
+
+.description_section .disDentsSideInfo h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.description_section .disDentsSideInfo p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+
 .description_section .social-media {
-  height: 45px;
+  height: 55px;
 }
 
 .contact_us_section {
-  padding-bottom: 100px;
-  padding-top: 30px;
+  padding-top: 100px;
   background-size: cover;
   background-image: url("../assets/footer/footer - bg.jpg");
+}
+
+.contact_us_section .fade-bottom {
+  padding-bottom: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0001)), to(black));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 0%, black 100%);
 }
 
 .contact_us_section hr {
@@ -501,7 +685,8 @@ header .btn {
 }
 
 footer {
-  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-color: black;
 }
 
