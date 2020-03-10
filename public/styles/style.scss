@@ -674,6 +674,11 @@ header {
             color: $colorSecondary;
             font-size: 17px;
             border-radius: 0;
+
+            &::placeholder{
+
+                color: #cccccc;
+            }
         
         }
         textarea {
@@ -685,6 +690,11 @@ header {
             color: $colorSecondary;
             font-size: 17px;
             border-radius: 0;
+
+            &::placeholder{
+
+                color: #cccccc;
+            }
         }
 
         button {

@@ -697,6 +697,22 @@ header .btn {
   border-radius: 0;
 }
 
+.contact_us_section form input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form input:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form input::placeholder {
+  color: #cccccc;
+}
+
 .contact_us_section form textarea {
   height: 250px;
   margin-bottom: 20px;
@@ -706,6 +722,22 @@ header .btn {
   color: #FBFBFB;
   font-size: 17px;
   border-radius: 0;
+}
+
+.contact_us_section form textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form textarea::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.contact_us_section form textarea::placeholder {
+  color: #cccccc;
 }
 
 .contact_us_section form button {
