@@ -141,6 +141,10 @@ header {
     h1{
         font-size: 24px;
         font-weight: 600;
+
+        @media (max-width: 768px){
+            font-size: 18px;
+        } 
     }
 
     h2{
@@ -148,7 +152,7 @@ header {
         font-weight: 300;
 
         @media (max-width: 768px){
-            font-size: 48px;
+            font-size: 36px;
         } 
     }
 
